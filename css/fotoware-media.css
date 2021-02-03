@@ -1,0 +1,198 @@
+.wrap.fotoware-setting {
+    margin: 0 20px 0 0;
+    height: calc(100vh - 32px);
+}
+
+.toplevel_page_fotoweb_plugin #wpbody-content {
+    padding: 0 !important;
+}
+
+.fotoware-setting-form {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoware-setting-form form {
+    height: auto;
+    margin: 0;
+    padding: 70px 30px 30px 30px;
+    font-size: 16px;
+    width: 600px;
+    text-align: center;
+    background: url(../images/top.svg) center, url(../images/bottom.svg) center, linear-gradient(to bottom, #002c4a, #002643, #00203d, #001b36, #001530);
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 25%, 25%, 100%;
+    background-position: top right, left bottom;
+    position: relative;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 35px 0;
+}
+
+.fotoware-setting-form form:before {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 80px;
+    background: url(../images/fotoware-logo.png) no-repeat center;
+    background-size: cover;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 3px rgba(0, 27, 54, 0.4);
+    border: 3px solid white;
+}
+
+.fotoware-setting-form form h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.fotoware-setting-form form .form-table {
+    margin: 20px auto 0;
+    width: auto;
+    max-width: 400px;
+    color: #fff;
+    z-index: 2;
+    text-align: left;
+}
+
+.fotoware-setting-form form .form-table tbody tr th {
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.fotoware-setting-form form .form-table tbody td {
+    padding: 0;
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.fotoware-setting-form form .form-table tbody td input {
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #004e84;
+    color: #fff;
+}
+
+.fotoware-setting-form form .submit {
+    margin: 0;
+    text-align: center;
+    z-index: 2;
+    padding: 0;
+}
+
+.fotoware-setting-form form .form-table tbody td a.button {
+    outline: none;
+    border-radius: 3px;
+    background-color: #008e91;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 20px;
+    transition: ease all 0.3s;
+    margin: 0 0 10px 0;
+}
+
+.fotoware-setting-form form .form-table tbody td a.button:hover {
+    background-color: rgba(0, 142, 145, 0.5);
+}
+
+.fotoware-setting-form form .submit #submit {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 15px;
+    background-color: #005fc5;
+    min-height: auto;
+    box-shadow: none;
+}
+
+.fotoware-setting-form form .submit #submit:hover {
+    background-color: rgba(0, 95, 197, 0.5);
+    transition: ease all 0.3s;
+}
+
+.fotoware-setting-form form .form-table tbody tr:last-child td {
+    text-align: center;
+}
+
+@media (max-width: 782px) {
+    .wrap.fotoware-setting {
+        margin: 0 10px 0 0;
+        height: calc(100vh - 46px);
+    }
+    .fotoware-setting-form form:before {
+        height: 50px;
+        width: 50px;
+        top: -25px;
+        border: 2px solid white;
+    }
+    .fotoware-setting-form form {
+        padding: 40px 15px 15px 15px;
+        font-size: 14px;
+    }
+    .fotoware-setting-form form h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .fotoware-setting-form form .form-table {
+        margin: 15px auto 0;
+    }
+    .fotoware-setting-form form .form-table tbody tr th {
+        font-size: 14px;
+    }
+    .fotoware-setting-form form .form-table tbody td input {
+        min-height: 30px;
+        line-height: normal;
+    }
+    .fotoware-setting-form form .form-table tbody td a.button {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .fotoware-setting-form {
+        height: calc(100% - 46px);
+    }
+}
+
+@media (max-width: 360px) {
+    .fotoware-setting-form {
+        height: auto;
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .fotoware-setting-form {
+        height: auto;
+        padding: 70px 0;
+    }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .wrap.fotoware-setting {
+        height: auto;
+    }
+    .fotoware-setting-form {
+        padding: 60px 0;
+        height: auto;
+    }
+}
